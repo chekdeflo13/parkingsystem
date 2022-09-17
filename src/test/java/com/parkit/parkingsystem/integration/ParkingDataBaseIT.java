@@ -68,7 +68,7 @@ public class ParkingDataBaseIT {
 		Ticket ticket = ticketDAO.getTicket(inputReaderUtil.readVehicleRegistrationNumber());
 		assertNotNull(ticket);// place de parking + ticket associÃ©s
 		assertNotNull(ticket.getParkingSpot());
-		// TODO: check that a ticket is actually saved in DB and Parking table is
+		// a ticket is actually saved in DB and Parking table is
 		// updated with availability
 
 	}
@@ -83,7 +83,7 @@ public class ParkingDataBaseIT {
 		assertNotNull(ticket.getPrice());
 		assertNotNull(ticket.getOutTime());
 
-		// TODO: check that the fare generated and out time are populated correctly in
+		// the fare generated and out time are populated correctly in
 		// the database
 	}
 
